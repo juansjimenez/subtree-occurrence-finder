@@ -1,4 +1,4 @@
-# hash-table-problem
+# subtree-occurrence-finder
 
 ## The Problem
 
@@ -9,8 +9,7 @@ A Binary Tree which leafs all reside at equal depth will be given. This tree wil
 </p> </br>
  <p align="center"> Σ with H = 4. The nodes are numbered from 1 to n, which corresponds to the node's ID </p> </br>
 
-
-The problem consists of finding the location of occurences of a Binary Tree `t`, of height `h` (1 ≤ h ≤ H), in `Σ`. An occurence of `t` in `Σ` is defined as some subtree of `Σ` which nodes coincide in color with `t`'s nodes. The following is an example:
+The problem consists of finding the location of occurrences of a Binary Tree `t`, of height `h` (1 ≤ h ≤ H), in `Σ`. An occurrence of `t` in `Σ` is defined as some subtree of `Σ` which nodes coincide in color with `t`'s nodes. The following is an example:
 
 <p align="center">
   <img width="60%" src=https://github.com/juansjimenez/hash-table-problem/blob/main/img/input_tree_example.PNG>
@@ -19,11 +18,11 @@ The problem consists of finding the location of occurences of a Binary Tree `t`,
 
 
 
-We denote the occurences of a subtree `t` in `Σ` by the ID of the node of `Σ` which coincides with the root of `t`. In the previous example, the occurences of `t` in `Σ` correspond to the indexes 1 and 5. Note that a given subtree `t` doesn't necessarily belong to `Σ`. 
+We denote the occurrences of a subtree `t` in `Σ` by the ID of the node of `Σ` which coincides with the root of `t`. In the previous example, the occurrences of `t` in `Σ` correspond to the indexes 1 and 5. Note that a given subtree `t` doesn't necessarily belong to `Σ`. 
 
 ## Solution
 
-The implemented solution to this problem consists of a hash table in order to search for the subrees in `Σ`. Every subree (of at least three nodes) is hashed and inserted into the table which uses open addressing to handle collisions. After hashing all subtrees, the occurences of a given tree `t` can be found by searching the table. Said table is implemented in the `table.c` file, the hashing procedures in the `hash.c` file and the tree procedures in the `tree.c` file (including searching for a tree in the table). 
+The implemented solution to this problem consists of a Hash Table in order to search for the subrees in `Σ`. Every subtree (of at least three nodes) is hashed and inserted into the table which uses Open Addressing to handle collisions. After hashing all subtrees, the occurrences of a given tree `t` can be found by searching the table. Said table is implemented in the `table.c` file, the hashing procedures in the `hash.c` file and the tree procedures in the `tree.c` file (including searching for a tree in the table). 
 
 ## Input
 
@@ -39,7 +38,7 @@ For example, the input for the `Σ` and `t` trees given in the previous example 
 
 ## Output
 
-The output consists of `N` lines, each one contaning the ID of each occurence of `t` in the `Σ` tree given by input, in ascending order. For example, for the previously given input, the output would be:  <br />
+The output consists of `N` lines, each one contaning the ID of each occurrence of `t` in the `Σ` tree given by input, in ascending order. For example, for the previously given input, the output would be:  <br />
 1 5
 
 ## Execution
