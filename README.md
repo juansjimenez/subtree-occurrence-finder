@@ -7,7 +7,6 @@ A Binary Tree which leaves all reside at equal depth will be given. This tree wi
 <p align="center">
   <img width="60%" src=https://github.com/juansjimenez/hash-table-problem/blob/main/img/tree_example.PNG>
 </p> </br>
- 
  <p align="center"> Σ with H = 4. The nodes are numbered from 1 to n. This number is denoted as the node's ID. </p>
 
 
