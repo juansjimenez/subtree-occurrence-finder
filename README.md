@@ -6,8 +6,9 @@ A Binary Tree which leaves all reside at equal depth will be given. This tree wi
 
 <p align="center">
   <img width="60%" src=https://github.com/juansjimenez/hash-table-problem/blob/main/img/tree_example.PNG>
-  <p align="center> Σ with H = 4. The nodes are numbered from 1 to n. This number is denoted as the node's ID. </p>
 </p>
+ 
+ <center> Σ with H = 4. The nodes are numbered from 1 to n. This number is denoted as the node's ID. </center>
 
 
 The problem to solve consists of finding where in `Σ` occurances of another Binary Tree are located. We will call this other tree `t`, of height `h` (1 ≤ h ≤ H). An occurance of `t` in `Σ` is defined as some subtree of `Σ`, which nodes coincide in color with `t`'s nodes. The following is an example:
