@@ -1,4 +1,4 @@
-# hash-table-implementation
+# hash-table-problem
 
 ## The Problem
 
